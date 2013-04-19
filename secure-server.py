@@ -30,7 +30,7 @@ def requires_auth(f):
 @app.route("/")
 @requires_auth
 def default():
-	return flash.send_from_directory("./html/index.html")
+	return flash.send_from_directory("./html/", "index.html")
 
 @app.route("/<path:filename>")
 def passThrough(filename):
