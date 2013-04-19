@@ -30,11 +30,11 @@ def requires_auth(f):
 @app.route("/")
 @requires_auth
 def default():
-	return home("./html/index.html")
+	return flash.send_from_directory("./html/index.html")
 
 @app.route("/<path:filename>")
 def passThrough(filename):
-        return flask.send_from_directory("./html", filename);
+    return flask.send_from_directory("./html", filename);
 
 
 if __name__ == "__main__":
