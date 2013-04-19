@@ -8,9 +8,7 @@ app = flask.Flask(__name__)
 
 
 def check_auth(username, password):
-    """
-    This function is called to check if a username / password combination is valid.
-    """
+    """This function is called to check if a username / password combination is valid"""
     return username == 'admin' and password == 'Adm1n'
 
 
