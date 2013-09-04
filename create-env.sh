@@ -8,4 +8,4 @@ echo "web: python secure-server.py" > Procfile
 
 pip freeze > requirements.txt
 
-echo `foreman check`
+foreman check
