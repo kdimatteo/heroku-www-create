@@ -1,0 +1,16 @@
+{
+  "name": "heroku-demo",
+  "version": "0.8.14",
+  "description": "testing heroku",
+  "main": "web.js",
+  "dependencies": {
+    "connect": "~2.7.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
